@@ -1,0 +1,18 @@
+{
+  "name": "wildhorizons",
+  "version": "1.0.0",
+  "description": "a dataset of the world's most interesting places",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git"
+
+  },
+  "keywords": [
+  ],
+  "author": "Vivek",
+  "license": "ISC"
+}
