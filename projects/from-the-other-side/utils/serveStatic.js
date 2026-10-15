@@ -16,8 +16,12 @@ export async function serveStatic(req,res,publicPath){
         return sendResponse(req, res,200,contentType,payload);
     }catch (error){
         if(error.code === 'ENOENT'){
-            const payload = await fs.readFile(path.join(publicPath,'404.html'));
-            return sendResponse(req, res,404,'text/html',payload);
+            try{
+                const payload = await fs.readFile(path.join(publicPath,'404.html'));
+                return sendResponse(req, res,404,'text/html',payload);
+            }catch(e){
+                return sendResponse(req, res,500,'text/html',`<html><h1>Server Error: ${e.code}</h1></html>`);
+            }
         }
         return sendResponse(req, res,500,'text/html',`<html><h1>Server Error: ${error.code}</h1></html>`);
     }    
