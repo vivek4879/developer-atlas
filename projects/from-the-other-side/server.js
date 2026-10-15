@@ -11,8 +11,13 @@ const __dir = import.meta.dirname;
 const publicPath = path.join(__dir,'public');
 
 const server = http.createServer(async (req,res) =>{
-    if(req.method ==='GET' && req.url === '/api'){
-        return await handleGet(req, res);
+    if(req.url === '/api'){
+        if(req.method ==='GET'){
+            return await handleGet(req, res);
+        }
+        else if(req.method ==='POST'){
+            return await handlePost(req, res);
+        }
     }
     else if(!req.url.startsWith('/api')){
         console.log(req.url)
