@@ -1,4 +1,4 @@
-// import {vinyl} from './data.js';
+
 import { getDbConnection } from './db/db.js';
 
 async function createTable(){
