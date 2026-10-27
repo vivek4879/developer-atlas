@@ -1,12 +1,13 @@
 import { open } from 'sqlite';
 import sqlite3 from 'sqlite3';
+import path from 'node:path'
 
 export async function getDbConnection(){
 
-    const path = path.join('database.db');
+    const dbPath = path.join('database.db');
 
     return open({
-        filename:path,
+        filename:dbPath,
         driver:sqlite3.Database
     })
 }
