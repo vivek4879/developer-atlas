@@ -19,6 +19,14 @@ individually.
 
 - [Wild Horizons API](./projects/wild-horizons) — a vanilla Node.js API for
   exploring interesting destinations around the world.
+- [From the Other Side](./projects/from-the-other-side) — a platform for sharing
+  ghostly encounters, built with a plain Node.js server, a JSON file for
+  storage, and live news over Server-Sent Events.
+- [Startup Planet API](./projects/startup-planet) — an Express API with
+  information about promising startups from around the world, filterable with
+  query and path parameters.
+- [Vinyl Store](./projects/vinyl-store) — an online store for classic vinyl
+  records, built with Express and SQLite, with genre filtering and search.
 
 More projects will be added as I progress through the course.
 
@@ -27,6 +35,9 @@ More projects will be added as I progress through the course.
 ```text
 developer-atlas/
 ├── projects/
+│   ├── from-the-other-side/
+│   ├── startup-planet/
+│   ├── vinyl-store/
 │   └── wild-horizons/
 └── README.md
 ```
