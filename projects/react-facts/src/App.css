@@ -1,0 +1,58 @@
+header {
+  background-color: #21222a;
+  height: 90px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+nav > img {
+  width: 40px;
+}
+
+nav > h1 {
+  color: #61dafb;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+main {
+  background-color: #282d35;
+  padding: 60px 40px;
+  min-height: calc(100vh - 90px);
+  position: relative;
+}
+
+main > h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 40px;
+}
+
+main ul {
+  padding-left: 50px;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+main li {
+  margin-bottom: 18px;
+  padding-left: 12px;
+}
+
+main li::marker {
+  color: #61dafb;
+}
+
+main {
+  background-image: url("./assets/react-logo-half.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 40px;
+  background-size: auto 400px;
+}

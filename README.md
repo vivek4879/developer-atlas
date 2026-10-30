@@ -27,6 +27,8 @@ individually.
   query and path parameters.
 - [Vinyl Store](./projects/vinyl-store) — an online store for classic vinyl
   records, built with Express and SQLite, with genre filtering and search.
+- [React Facts](./projects/react-facts) — a small React and Vite app with fun
+  facts about React, built with JSX and custom components.
 
 More projects will be added as I progress through the course.
 
@@ -36,6 +38,7 @@ More projects will be added as I progress through the course.
 developer-atlas/
 ├── projects/
 │   ├── from-the-other-side/
+│   ├── react-facts/
 │   ├── startup-planet/
 │   ├── vinyl-store/
 │   └── wild-horizons/
