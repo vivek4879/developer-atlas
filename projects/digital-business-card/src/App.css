@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  background-color: #20232c;
+  font-family: "Inter", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card shell */
+.card {
+  width: 100%;
+  max-width: 290px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Base text styles inside the card */
+.card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+  color: #2b2d42;
+}
+
+.card p {
+  font-size: 0.7rem;
+  line-height: 1.4;
+  margin: 0;
+  color: #3d4160;
+}
+
+/* Name, job title, website.
+   `.info .x` is used so these win over the general `.card p` rule. */
+.info {
+  text-align: center;
+  padding: 20px 32px 0;
+}
+
+.info .name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #2b2d42;
+}
+
+.info .job-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 4px 0 8px;
+  color: #f08a4b;
+}
+
+.info .website {
+  font-size: 0.65rem;
+  margin: 0 0 20px;
+}
+
+/* Email and LinkedIn buttons */
+.contact-buttons {
+  display: flex;
+  gap: 14px;
+  padding: 0 32px;
+  margin-bottom: 24px;
+}
+
+.btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 0;
+  font-family: inherit;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-email {
+  background-color: #ffffff;
+  color: #2b2d42;
+  border: 1px solid #d4d4d8;
+}
+
+.btn-linkedin {
+  background-color: #2f80ed;
+  color: #ffffff;
+  border: 1px solid #2f80ed;
+}
+
+/* About and Interests */
+.info-section {
+  padding: 0 32px;
+  margin-bottom: 20px;
+}
+
+/* Footer with social icons */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 32px;
+  padding: 18px 0;
+  background-color: #d9d9de;
+}
+
+footer svg {
+  width: 24px;
+  height: 24px;
+  color: #8a8a96;
+}
