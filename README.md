@@ -29,6 +29,8 @@ individually.
   records, built with Express and SQLite, with genre filtering and search.
 - [React Facts](./projects/react-facts) — a small React and Vite app with fun
   facts about React, built with JSX and custom components.
+- [Digital Business Card](./projects/digital-business-card) — a profile card
+  built with React components, React Icons, and plain CSS.
 
 More projects will be added as I progress through the course.
 
@@ -37,6 +39,7 @@ More projects will be added as I progress through the course.
 ```text
 developer-atlas/
 ├── projects/
+│   ├── digital-business-card/
 │   ├── from-the-other-side/
 │   ├── react-facts/
 │   ├── startup-planet/
